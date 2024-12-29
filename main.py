@@ -1,8 +1,23 @@
 """
 Main file to run the code.
+
+@TODO: Add partnership notes (lead/follow, mixed/regular, style etc.)
 """
 
-from Enums import Competitive, Role, Mixed, Level, Competitions
+from Matchmaker import Matchmaker
 
 def main():
-    return None
+
+    # parse the input csv and create the list of partners for each style
+    partners = []
+
+    # for each one, run the matchmaker algorithm
+    matchmaker = Matchmaker()
+    matches = matchmaker.match(partners)
+
+    # output the results
+
+    return
+
+if __name__=="__main__":
+    main()
